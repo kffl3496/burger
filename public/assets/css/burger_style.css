@@ -1,0 +1,40 @@
+body {
+  background-color: #E6DA9F;
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  background-color: bisque;
+}
+
+pre {
+  background-color: #77F290;
+  font-size: 15px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+img {
+  width: 25%;
+}
+
+.form-control[readonly] {
+  color: black;
+  margin: 5px;
+  border: 20px;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-spacing {
+  justify-content: space-between;
+}
+

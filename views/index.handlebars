@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+ 		<div class="col-12 text-center" id="top-bar">
+			<img src="/assets/img/burger.jpg" alt="burger" class="burgerImg" />
+			<h1> Eat-Da-Burger! </h1>
+		</div>
+  </div>
+	<div class="flex-container flex-spacing">
+		<div>
+		{{#each burger_data}}
+			{{#unless devoured}}
+			<div class="row">
+				<form action="/api/devour/{{id}}" method="post">
+						{{burger_name}} <button type="submit">Devour it!</button>
+				</form>
+			</div>
+			{{/unless}}
+		{{/each}}
+		</div>
+		<div>
+		{{#each burger_data}}
+			{{#if devoured}}
+			<div class="row">
+				{{burger_name}}
+			</div>
+			{{/if}}
+		{{/each}}
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center enter_section">
+				<form action="/api/create" method="POST">
+					<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+					<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				</form>
+				<p>Enter the type of burger you want to eat.</p>
+			</div>
+		</div>
+	</div>
+</div>
