@@ -1,6 +1,6 @@
 body {
   background-color: #E6DA9F;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
 }
 
 * {
@@ -23,7 +23,7 @@ img {
   margin: 5px;
   border: 20px;
   font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 
 .flex-container {
