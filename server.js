@@ -13,6 +13,18 @@ const connection = mysql.createConnection({
   port: 3306
 });
 
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'burgers_db',
+    port: 3306
+  });
+};
+
 app.engine('handlebars', expbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static('public'));
