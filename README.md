@@ -7,4 +7,4 @@ Created a logger webpage that utilizes node, express, handlebars, and mysql.  Th
 
 
 github: 
-Deployed: https://kffl3496.github.io/burger/
+Deployed: https://guarded-depths-64477.herokuapp.com/
