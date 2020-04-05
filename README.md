@@ -6,5 +6,5 @@ Created a logger webpage that utilizes node, express, handlebars, and mysql.  Th
 ![ReferencePic](https://user-images.githubusercontent.com/59713450/76722544-6f292700-671a-11ea-8e07-0afa4ed52a2f.png)
 
 
-github: 
-Deployed: https://guarded-depths-64477.herokuapp.com/
+github: https://github.com/kffl3496/burger/
+Heroku Deployed: https://guarded-depths-64477.herokuapp.com/
